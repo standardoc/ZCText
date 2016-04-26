@@ -64,7 +64,7 @@
     if (class) {
         UIViewController *ctrl = class.new;
         ctrl.title = _titles[indexPath.row];
-        [self.navigationController pushViewController:ctrl animated:YES];
+        [self.navigationController pushViewController:ctrl animated:NO];
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
